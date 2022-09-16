@@ -1,0 +1,144 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<filter>
+		<filter-name>FilterServletRequests</filter-name>
+		<display-name>FilterServletRequests</display-name>
+		<description></description>
+		<filter-class>com.filters.FilterServletRequests</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+		<url-pattern>/class</url-pattern>
+	<!--  	<url-pattern>/students</url-pattern>
+		<url-pattern>/subjects</url-pattern>-->
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/students</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/subjects</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/teachers</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/UpdateClasses</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/reporting</url-pattern>
+	</filter-mapping>
+	
+	
+	
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/Assignment.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/AssignClassForSubjects.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>FilterServletRequests</filter-name>
+			<url-pattern>/AssignTeacherToClassForSubjects.jsp</url-pattern>
+	</filter-mapping>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<display-name>Login</display-name>
+		<description></description>
+		<servlet-class>com.servlets.Login</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ClassesRetrieval</servlet-name>
+		<display-name>ClassesRetrieval</display-name>
+		<description></description>
+		<servlet-class>com.servlets.ClassesRetrieval</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>StudentsRetrieval</servlet-name>
+		<display-name>StudentsRetrieval</display-name>
+		<description></description>
+		<servlet-class>com.servlets.StudentsRetrieval</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SubjectsRetrieval</servlet-name>
+		<display-name>SubjectsRetrieval</display-name>
+		<description></description>
+		<servlet-class>com.servlets.SubjectsRetrieval</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TeachersRetrieval</servlet-name>
+		<display-name>TeachersRetrieval</display-name>
+		<description></description>
+		<servlet-class>com.servlets.TeachersRetrieval</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateClasses</servlet-name>
+		<display-name>UpdateClasses</display-name>
+		<description></description>
+		<servlet-class>com.servlets.UpdateClasses</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ClassReport</servlet-name>
+		<display-name>ClassReport</display-name>
+		<description></description>
+		<servlet-class>com.servlets.ClassReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ClassesRetrieval</servlet-name>
+		<url-pattern>/class</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>StudentsRetrieval</servlet-name>
+		<url-pattern>/students</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SubjectsRetrieval</servlet-name>
+		<url-pattern>/subjects</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TeachersRetrieval</servlet-name>
+		<url-pattern>/teachers</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateClasses</servlet-name>
+		<url-pattern>/UpdateClasses</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ClassReport</servlet-name>
+		<url-pattern>/reporting</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Login.html</welcome-file>
+		<welcome-file>Login.htm</welcome-file>
+		<welcome-file>Login.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
